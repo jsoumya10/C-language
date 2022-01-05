@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    
+    //Complete the code to calculate the sum of the five digits on n.
+     int s=0,n,a;
+     
+     scanf("%d", &n);
+     if(n>99999)
+     {
+         printf("Wrong input");
+     }
+         else
+         {
+             while(n!=0)
+             {
+                 a=n%10;
+                 n=n/10;
+                 s=s+a;
+                 }
+                  printf("%d", s);
+         }
+    return 0;
+}
